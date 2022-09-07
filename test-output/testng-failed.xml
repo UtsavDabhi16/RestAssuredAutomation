@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.CurationDemo">
+      <class name="tests.ElasticSI_Project">
         <methods>
-          <include name="projectCurationListing"/>
+          <include name="getFilterDetails"/>
         </methods>
-      </class> <!-- tests.CurationDemo -->
+      </class> <!-- tests.ElasticSI_Project -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
