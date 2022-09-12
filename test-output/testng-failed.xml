@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ElasticSI_Project">
+      <class name="tests.ElasticDemo">
         <methods>
-          <include name="getFilterDetails"/>
+          <include name="deleteProjectById"/>
+          <include name="createProject"/>
+          <include name="updateProjectById"/>
+          <include name="getProjectsById"/>
+          <include name="getProjectsByIdOptimized"/>
         </methods>
-      </class> <!-- tests.ElasticSI_Project -->
+      </class> <!-- tests.ElasticDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
