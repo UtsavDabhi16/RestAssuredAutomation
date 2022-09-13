@@ -5,11 +5,7 @@
     <classes>
       <class name="tests.ElasticDemo">
         <methods>
-          <include name="deleteProjectById"/>
-          <include name="createProject"/>
-          <include name="updateProjectById"/>
           <include name="getProjectsById"/>
-          <include name="getProjectsByIdOptimized"/>
         </methods>
       </class> <!-- tests.ElasticDemo -->
     </classes>

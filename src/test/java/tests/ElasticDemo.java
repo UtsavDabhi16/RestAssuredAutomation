@@ -1,23 +1,10 @@
 package tests;
 
-import org.testng.annotations.Test;
-
-import com.jayway.jsonpath.JsonPath;
-
-import org.testng.AssertJUnit;
+import org.json.JSONException;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import org.apache.http.HttpStatus;
 import org.json.JSONObject;
 import io.restassured.RestAssured;
@@ -45,8 +32,26 @@ public class ElasticDemo {
 		request.header("accept","application/json, text/plain, */*");
 		
 		Response resFrommGenrateedToken = request.body(playload).post("/authenticate");
-		
+
 		String jsonString = resFrommGenrateedToken.getBody().asString();
+
+		System.out.println("jsonString" + jsonString);
+
+		List<String> keyList = new ArrayList<String>();
+		try {
+			JSONObject jsonObject = new JSONObject(jsonString);
+			JSONObject schema = jsonObject.getJSONObject("result");
+			Iterator iterator = schema.keys();
+			while (iterator.hasNext()) {
+				String key = iterator.next().toString();
+				keyList.add(key);
+			}
+			String[] arr = (String[]) keyList.toArray(new String[keyList.size()]);
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+
+		System.out.println("keyList " + keyList);
 
 		JSONObject jsonObj = new JSONObject(jsonString);
 		System.out.print(jsonObj.getJSONObject("result").getString("token"));
@@ -381,5 +386,7 @@ public class ElasticDemo {
 				.log().all();
 
 	}
+
+
 
 }
