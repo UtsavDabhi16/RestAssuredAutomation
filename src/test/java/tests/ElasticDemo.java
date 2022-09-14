@@ -242,10 +242,6 @@ public class ElasticDemo {
 			System.out.println("Inside Else Part");
 			Assert.assertEquals(false, false,"Doesn't meet the expected result");
 		}
-
-
-
-
 	}
 
 
@@ -597,23 +593,87 @@ public class ElasticDemo {
 //			Assert.assertEquals(false, true,"doesn't meet the expected result");
 //		}
 
-		for(Object arr :getData)
-		{
-			if(arr!=null)
-			{
-				String dataType =arr.getClass().getSimpleName();
+		for(Object arr :getData) {
+			if (arr != null) {
+				String dataType = arr.getClass().getSimpleName();
 				System.out.println(arr + " " + arr.getClass().getSimpleName());
-				if (!dataType.equals("String") && !dataType.equals("Boolean") ){
-					Assert.assertEquals(true, false,"Not String");
+				if (!dataType.equals("String") && !dataType.equals("Boolean")) {
+					Assert.assertEquals(true, false, "Not String");
 				}
 			}
-
 		}
 
+	}
 
+
+	@Test
+	public void getAttribute() throws ParseException, IOException {
+		Map<String ,String> headers =new HashMap<String,String>(){
+			private static final long serialVersionUID = 1L;
+
+			{
+				put("accept","application/json, text/plain, */*");
+				put("Authorization","Bearer "+ getToken());
+			}
+
+		};
+
+		String result = given()
+				.headers(headers)
+//				.when()
+				.get("https://search-admin-dev-mamb5phriq-uc.a.run.app/search-admin/api/projects/b989a5e8-7095-4a0a-a57d-07ee46ba83de/details")
+//				.then()
+//				.assertThat()
+//				.statusCode(HttpStatus.SC_OK)
+//				.log().all();
+				.andReturn().asString();
+
+		System.out.println("Project List : "+result);
+
+		JSONObject obj = new JSONObject(result);
+//
+//
+		JsonPath jsonPathEvaluator = new JsonPath(result);
+		List allFields = new ArrayList();
+//
+		JSONArray array = obj.getJSONArray("result");
+//
+		Iterator<Object> iterator = array.iterator();
+		while(iterator.hasNext()){
+			JSONObject jsonObject = (JSONObject) iterator.next();
+			for(String key : jsonObject.keySet()){
+				allFields.add(key);
+			}
+		}
+//
+		System.out.println("All Field Values :"+allFields);
+
+//		ArrayList getData = jsonPathEvaluator.getJsonObject("result."+allFields.get(14));
+//		String dataOfFirst = getData.get(0).toString();
+//		System.out.println("Data of First :"+dataOfFirst);
+//
+//		UUID uuid = UUID.fromString(String.valueOf(dataOfFirst));
+//		System.out.println("User UUID is :"+uuid);
+//
+//		String numRegex   = ".*[0-9].*";
+//		String alphaRegex = ".*[a-z].*";
+
+//		if (!(dataOfFirst.matches(numRegex) && dataOfFirst.matches(alphaRegex))) {
+//			Assert.assertEquals(false, true,"Doesn't meet the expected result");
+//		}
+
+//		ElsticSI_Utility elsticSI_utility=new ElsticSI_Utility();
+
+//		if (elsticSI_utility.version("1.1.1")) {
+//			Assert.assertEquals(true, true,"meet the expected result");
+//		}
+//		else
+//		{
+//			Assert.assertEquals(false, false,"Doesn't meet the expected result");
+//		}
 
 	}
-	
+
 
 
 
