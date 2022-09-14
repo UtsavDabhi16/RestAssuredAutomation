@@ -5,7 +5,13 @@
     <classes>
       <class name="tests.ElasticDemo">
         <methods>
+          <include name="getProjectCheckDataType"/>
+          <include name="deleteProjectById"/>
+          <include name="createProject"/>
+          <include name="updateProjectById"/>
           <include name="getProjectsById"/>
+          <include name="getProjectsByIdOptimized"/>
+          <include name="getProjectCheckDataType1"/>
         </methods>
       </class> <!-- tests.ElasticDemo -->
     </classes>

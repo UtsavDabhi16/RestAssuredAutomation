@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/7/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 12 14:14:31 IST 2022</td>
+<td>Started on:</td><td>Tue Sep 13 16:06:11 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15314 ms)</td>
+<tr><td>Total time:</td><td>19 seconds (19656 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -94,10 +94,10 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at tests.ElasticDemo.getProjectsByIdOptimized(ElasticDemo.java:147)
+	at tests.ElasticDemo.getProjectsByIdOptimized(ElasticDemo.java:208)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1344345219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1344345219'><pre>java.lang.AssertionError: 1 expectation failed.
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace651431031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace651431031'><pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;404&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -124,7 +124,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at tests.ElasticDemo.getProjectsByIdOptimized(ElasticDemo.java:147)
+	at tests.ElasticDemo.getProjectsByIdOptimized(ElasticDemo.java:208)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -155,51 +155,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
-<tr>
-<td title='tests.ElasticDemo.updateProjectById()'><b>updateProjectById</b><br>Test class: tests.ElasticDemo</td>
-<td><div><pre>java.lang.AssertionError: expected:&lt;404&gt; but was:&lt;200&gt;
-	at tests.ElasticDemo.updateProjectById(ElasticDemo.java:348)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace272406527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace272406527'><pre>java.lang.AssertionError: expected:&lt;404&gt; but was:&lt;200&gt;
-	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
-	at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:467)
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:88)
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:318)
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:328)
-	at tests.ElasticDemo.updateProjectById(ElasticDemo.java:348)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
+<td>tests.ElasticDemo@9573584</td></tr>
 <tr>
 <td title='tests.ElasticDemo.getProjectsById()'><b>getProjectsById</b><br>Test class: tests.ElasticDemo</td>
 <td><div><pre>java.lang.AssertionError: 1 expectation failed.
@@ -219,10 +175,10 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at tests.ElasticDemo.getProjectsById(ElasticDemo.java:122)
+	at tests.ElasticDemo.getProjectsById(ElasticDemo.java:183)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1572582034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1572582034'><pre>java.lang.AssertionError: 1 expectation failed.
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace908744222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace908744222'><pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;404&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -249,7 +205,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at tests.ElasticDemo.getProjectsById(ElasticDemo.java:122)
+	at tests.ElasticDemo.getProjectsById(ElasticDemo.java:183)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -280,7 +236,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
+<td>tests.ElasticDemo@9573584</td></tr>
 <tr>
 <td title='tests.ElasticDemo.deleteProjectById()'><b>deleteProjectById</b><br>Test class: tests.ElasticDemo</td>
 <td><div><pre>java.lang.AssertionError: 1 expectation failed.
@@ -310,10 +266,10 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at tests.ElasticDemo.deleteProjectById(ElasticDemo.java:373)
+	at tests.ElasticDemo.deleteProjectById(ElasticDemo.java:434)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1415812333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1415812333'><pre>java.lang.AssertionError: 1 expectation failed.
+... Removed 37 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace876864630", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace876864630'><pre>java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;200&gt; but was &lt;404&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -350,7 +306,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at tests.ElasticDemo.deleteProjectById(ElasticDemo.java:373)
+	at tests.ElasticDemo.deleteProjectById(ElasticDemo.java:434)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -381,20 +337,146 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
+<td>tests.ElasticDemo@9573584</td></tr>
 <tr>
-<td title='tests.ElasticDemo.createProject()'><b>createProject</b><br>Test class: tests.ElasticDemo</td>
-<td><div><pre>java.lang.AssertionError: expected:&lt;400&gt; but was:&lt;200&gt;
-	at tests.ElasticDemo.createProject(ElasticDemo.java:299)
+<td title='tests.ElasticDemo.getProjectCheckDataType1()'><b>getProjectCheckDataType1</b><br>Test class: tests.ElasticDemo</td>
+<td><div><pre>java.lang.IllegalArgumentException: Invalid UUID string: false
+	at java.base/java.util.UUID.fromString(UUID.java:215)
+	at tests.ElasticDemo.getProjectCheckDataType1(ElasticDemo.java:112)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1651795723", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1651795723'><pre>java.lang.AssertionError: expected:&lt;400&gt; but was:&lt;200&gt;
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1173009186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1173009186'><pre>java.lang.IllegalArgumentException: Invalid UUID string: false
+	at java.base/java.util.UUID.fromString(UUID.java:215)
+	at tests.ElasticDemo.getProjectCheckDataType1(ElasticDemo.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>tests.ElasticDemo@9573584</td></tr>
+<tr>
+<td title='tests.ElasticDemo.updateProjectById()'><b>updateProjectById</b><br>Test class: tests.ElasticDemo</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;404&gt; but was:&lt;200&gt;
+	at tests.ElasticDemo.updateProjectById(ElasticDemo.java:409)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1823390262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1823390262'><pre>java.lang.AssertionError: expected:&lt;404&gt; but was:&lt;200&gt;
 	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
 	at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:467)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:88)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:318)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:328)
-	at tests.ElasticDemo.createProject(ElasticDemo.java:299)
+	at tests.ElasticDemo.updateProjectById(ElasticDemo.java:409)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>tests.ElasticDemo@9573584</td></tr>
+<tr>
+<td title='tests.ElasticDemo.createProject()'><b>createProject</b><br>Test class: tests.ElasticDemo</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;500&gt; but was:&lt;200&gt;
+	at tests.ElasticDemo.createProject(ElasticDemo.java:360)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace470187021", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace470187021'><pre>java.lang.AssertionError: expected:&lt;500&gt; but was:&lt;200&gt;
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng.AssertJUnit.failNotEquals(AssertJUnit.java:467)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:88)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:318)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:328)
+	at tests.ElasticDemo.createProject(ElasticDemo.java:360)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>tests.ElasticDemo@9573584</td></tr>
+<tr>
+<td title='tests.ElasticDemo.getProjectCheckDataType()'><b>getProjectCheckDataType</b><br>Test class: tests.ElasticDemo</td>
+<td><div><pre>java.lang.IllegalArgumentException: Invalid UUID string: 2022-Sep-13 09:22:31
+	at java.base/java.util.UUID.fromString(UUID.java:215)
+	at tests.ElasticDemo.getProjectCheckDataType(ElasticDemo.java:479)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace342997389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace342997389'><pre>java.lang.IllegalArgumentException: Invalid UUID string: 2022-Sep-13 09:22:31
+	at java.base/java.util.UUID.fromString(UUID.java:215)
+	at tests.ElasticDemo.getProjectCheckDataType(ElasticDemo.java:479)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -425,7 +507,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>2</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
+<td>tests.ElasticDemo@9573584</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -436,35 +518,30 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.ElasticDemo.getExtension()'><b>getExtension</b><br>Test class: tests.ElasticDemo</td>
-<td></td>
-<td>1</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
-<tr>
 <td title='tests.ElasticDemo.getProjectsOptimized()'><b>getProjectsOptimized</b><br>Test class: tests.ElasticDemo</td>
 <td></td>
 <td>1</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
-<tr>
-<td title='tests.ElasticDemo.getSettingDetails()'><b>getSettingDetails</b><br>Test class: tests.ElasticDemo</td>
-<td></td>
-<td>1</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
-<tr>
-<td title='tests.ElasticDemo.getProjects()'><b>getProjects</b><br>Test class: tests.ElasticDemo</td>
-<td></td>
-<td>1</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
-<tr>
-<td title='tests.ElasticDemo.getFilterDetails()'><b>getFilterDetails</b><br>Test class: tests.ElasticDemo</td>
-<td></td>
-<td>1</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
+<td>tests.ElasticDemo@9573584</td></tr>
 <tr>
 <td title='tests.ElasticDemo.getSynonymByProjectId()'><b>getSynonymByProjectId</b><br>Test class: tests.ElasticDemo</td>
 <td></td>
 <td>1</td>
-<td>tests.ElasticDemo@332729ad</td></tr>
+<td>tests.ElasticDemo@9573584</td></tr>
+<tr>
+<td title='tests.ElasticDemo.getExtension()'><b>getExtension</b><br>Test class: tests.ElasticDemo</td>
+<td></td>
+<td>1</td>
+<td>tests.ElasticDemo@9573584</td></tr>
+<tr>
+<td title='tests.ElasticDemo.getFilterDetails()'><b>getFilterDetails</b><br>Test class: tests.ElasticDemo</td>
+<td></td>
+<td>1</td>
+<td>tests.ElasticDemo@9573584</td></tr>
+<tr>
+<td title='tests.ElasticDemo.getSettingDetails()'><b>getSettingDetails</b><br>Test class: tests.ElasticDemo</td>
+<td></td>
+<td>1</td>
+<td>tests.ElasticDemo@9573584</td></tr>
 </table><p>
 </body>
 </html>
